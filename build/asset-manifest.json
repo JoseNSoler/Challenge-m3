@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/agenciam3/Desenvolvedor-M3static/css/main.18bfc323.chunk.css",
+    "main.js": "/agenciam3/Desenvolvedor-M3static/js/main.afa52b7b.chunk.js",
+    "main.js.map": "/agenciam3/Desenvolvedor-M3static/js/main.afa52b7b.chunk.js.map",
+    "runtime-main.js": "/agenciam3/Desenvolvedor-M3static/js/runtime-main.014342d5.js",
+    "runtime-main.js.map": "/agenciam3/Desenvolvedor-M3static/js/runtime-main.014342d5.js.map",
+    "static/js/2.eb8fac18.chunk.js": "/agenciam3/Desenvolvedor-M3static/js/2.eb8fac18.chunk.js",
+    "static/js/2.eb8fac18.chunk.js.map": "/agenciam3/Desenvolvedor-M3static/js/2.eb8fac18.chunk.js.map",
+    "index.html": "/agenciam3/Desenvolvedor-M3index.html",
+    "static/css/main.18bfc323.chunk.css.map": "/agenciam3/Desenvolvedor-M3static/css/main.18bfc323.chunk.css.map",
+    "static/js/2.eb8fac18.chunk.js.LICENSE.txt": "/agenciam3/Desenvolvedor-M3static/js/2.eb8fac18.chunk.js.LICENSE.txt",
+    "static/media/Header.module.scss": "/agenciam3/Desenvolvedor-M3static/media/shop-logo.01833f95.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.014342d5.js",
+    "static/js/2.eb8fac18.chunk.js",
+    "static/css/main.18bfc323.chunk.css",
+    "static/js/main.afa52b7b.chunk.js"
+  ]
+}

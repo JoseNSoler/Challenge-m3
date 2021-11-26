@@ -1,0 +1,114 @@
+@import "./../../styles/variables.scss";
+
+
+.ulOrdenar{
+
+    z-index: 4;
+    width: 11.33%;
+    height: 41%;
+
+    outline: 1px solid $grayL;
+    display: inline-table;
+
+
+    box-sizing: border-box;
+
+    align-self:center;
+
+    display: flex;
+    flex-flow: row wrap;
+
+    &__Actv{
+
+        align-items: center;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.915vw;
+        line-height: 22px;
+        color: $black;
+
+
+
+        padding-left: 0px;
+        list-style: none;
+        position: relative;
+
+
+        height: 100%;
+        display: inline-table;
+        outline: 1px solid $grayL;
+        
+        
+
+        li{
+            height: 100%;
+            padding: 5px 2px 2px 0;
+            padding-left: 8%;
+            background-color: rgb(202, 128, 128);
+
+            &:hover{
+                color: white;
+                background-color: $blue;
+                border-top: 1px solid $grayL;
+                border-bottom: 1px solid $grayL;
+            }
+
+            @include breakpoint(bg) {
+                font-size: 73%;
+            }
+        }
+
+    }
+
+    &__divA{
+        display: flex;
+        width: 10px;
+        height: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    p {
+
+        display: flex;
+        align-items: center;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.915vw;
+
+        @include breakpoint(bg) {
+            font-size: 125%;
+        }
+        line-height: 22px;
+        color: $black;
+        justify-content: space-evenly;
+    }
+
+    &__arrow{
+        margin: 0px 0px 7px 0px;
+
+        width: 100%;
+        height: 100%;    
+        border: 1px solid #666666;
+        border-width: 0 1px 1px 0;
+
+        -webkit-transform: rotate(45deg) skew(10deg, 10deg);
+        -moz-transform: rotate(45deg) skew(10deg, 10deg);
+        -ms-transform: rotate(45deg) skew(10deg, 10deg);
+        -o-transform: rotate(45deg) skew(10deg, 10deg);
+        transform: rotate(45deg) skew(10deg, 10deg);
+
+    }
+
+    
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.ulOrdenarNone{
+    display: none;
+}

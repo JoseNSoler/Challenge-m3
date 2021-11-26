@@ -5,12 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "npm-run-all --parallel dev server",
-    "dev": "gulp",
+    "dev": "react-scripts start",
+    "build": "react-scripts build",
     "server": "json-server ./db.json --port 5000"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/agenciam3/Desenvolvedor-M3.git"
   },
   "author": "Heraldo Ecard Roque Filho",
   "license": "ISC",
@@ -20,16 +17,34 @@
   "homepage": "https://github.com/agenciam3/Desenvolvedor-M3#readme",
   "devDependencies": {
     "@babel/preset-env": "^7.16.0",
-    "babel-loader": "^8.2.3",
+    "@testing-library/jest-dom": "^5.15.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "babel-loader": "8.1.0",
     "browser-sync": "^2.27.7",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",
+    "json-server": "^0.17.0",
     "npm-run-all": "^4.1.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^4.0.3",
     "sass": "^1.43.4",
-    "webpack": "^5.62.1",
-    "json-server": "^0.17.0"
+    "web-vitals": "^2.1.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
