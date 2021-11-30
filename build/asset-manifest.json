@@ -1,21 +1,30 @@
 {
   "files": {
-    "main.css": "/agenciam3/Desenvolvedor-M3static/css/main.18bfc323.chunk.css",
-    "main.js": "/agenciam3/Desenvolvedor-M3static/js/main.afa52b7b.chunk.js",
-    "main.js.map": "/agenciam3/Desenvolvedor-M3static/js/main.afa52b7b.chunk.js.map",
+    "main.css": "/agenciam3/Desenvolvedor-M3static/css/main.cefb0f96.chunk.css",
+    "main.js": "/agenciam3/Desenvolvedor-M3static/js/main.923c7707.chunk.js",
+    "main.js.map": "/agenciam3/Desenvolvedor-M3static/js/main.923c7707.chunk.js.map",
     "runtime-main.js": "/agenciam3/Desenvolvedor-M3static/js/runtime-main.014342d5.js",
     "runtime-main.js.map": "/agenciam3/Desenvolvedor-M3static/js/runtime-main.014342d5.js.map",
-    "static/js/2.eb8fac18.chunk.js": "/agenciam3/Desenvolvedor-M3static/js/2.eb8fac18.chunk.js",
-    "static/js/2.eb8fac18.chunk.js.map": "/agenciam3/Desenvolvedor-M3static/js/2.eb8fac18.chunk.js.map",
+    "static/js/2.3150bb4d.chunk.js": "/agenciam3/Desenvolvedor-M3static/js/2.3150bb4d.chunk.js",
+    "static/js/2.3150bb4d.chunk.js.map": "/agenciam3/Desenvolvedor-M3static/js/2.3150bb4d.chunk.js.map",
     "index.html": "/agenciam3/Desenvolvedor-M3index.html",
-    "static/css/main.18bfc323.chunk.css.map": "/agenciam3/Desenvolvedor-M3static/css/main.18bfc323.chunk.css.map",
-    "static/js/2.eb8fac18.chunk.js.LICENSE.txt": "/agenciam3/Desenvolvedor-M3static/js/2.eb8fac18.chunk.js.LICENSE.txt",
+    "static/css/main.cefb0f96.chunk.css.map": "/agenciam3/Desenvolvedor-M3static/css/main.cefb0f96.chunk.css.map",
+    "static/js/2.3150bb4d.chunk.js.LICENSE.txt": "/agenciam3/Desenvolvedor-M3static/js/2.3150bb4d.chunk.js.LICENSE.txt",
+    "static/media/img_10.png": "/agenciam3/Desenvolvedor-M3static/media/img_10.f3e12486.png",
+    "static/media/img_2.png": "/agenciam3/Desenvolvedor-M3static/media/img_2.92213bc2.png",
+    "static/media/img_3.png": "/agenciam3/Desenvolvedor-M3static/media/img_3.424421dc.png",
+    "static/media/img_4.png": "/agenciam3/Desenvolvedor-M3static/media/img_4.5ca25b19.png",
+    "static/media/img_5.png": "/agenciam3/Desenvolvedor-M3static/media/img_5.9864b0c0.png",
+    "static/media/img_6.png": "/agenciam3/Desenvolvedor-M3static/media/img_6.854ad601.png",
+    "static/media/img_7.png": "/agenciam3/Desenvolvedor-M3static/media/img_7.08e7d3d7.png",
+    "static/media/img_8.png": "/agenciam3/Desenvolvedor-M3static/media/img_8.8df1bf68.png",
+    "static/media/img_9.png": "/agenciam3/Desenvolvedor-M3static/media/img_9.b659aff7.png",
     "static/media/Header.module.scss": "/agenciam3/Desenvolvedor-M3static/media/shop-logo.01833f95.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.014342d5.js",
-    "static/js/2.eb8fac18.chunk.js",
-    "static/css/main.18bfc323.chunk.css",
-    "static/js/main.afa52b7b.chunk.js"
+    "static/js/2.3150bb4d.chunk.js",
+    "static/css/main.cefb0f96.chunk.css",
+    "static/js/main.923c7707.chunk.js"
   ]
 }

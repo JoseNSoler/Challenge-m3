@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Open+Sans:wght@300;400;600&display=swap');
 
@@ -12,11 +13,13 @@ $grayL: rgba(0, 0, 0, 0.5);
 $grayM: #666666;;
 $blue: #00C0EE;
 
-$resolSm: 850px;
+$resolSm: 1265px;
 $resolBg: 2130px;
 
+$resolXl: 1500px;
 
-$padding: 11%;
+
+$padding: 10%;
 $paddingSm: 3.5%;
 
 // images
@@ -30,11 +33,31 @@ $shopLogo: url('./../../img/shop-logo.svg');
     border: 1px solid $grayL;
     box-sizing: border-box;
     &:hover{
-        cursor: progress;
+        cursor: pointer;
     }
     
 }
 
+@mixin select($size){
+    appearance: none;
+    border: 1px solid $grayL;
+    display: grid;
+    place-content: center;
+    &::before{
+        content: "";
+        width: $size;
+        height: $size;
+        transform: scale(0);
+        transition: 50ms transform ease-in-out;
+        background-color: $blue;
+        background-position: center;
+        justify-content: center;
+    }
+
+    &:checked::before{
+        transform: scale(1);
+    }
+}
 
 @mixin breakpoint($point) {
     @if $point == md {
@@ -47,15 +70,20 @@ $shopLogo: url('./../../img/shop-logo.svg');
             @content;
         }
     }
+    @if $point == sm {
+        @media (max-width: $resolXl) {
+            @content;
+        }
+    }
 }
 
 @mixin circle($width, $color) {
     width: $width;
     height: $width;
     background: $color;
-    -webkit-border-radius: $width/2;
-       -moz-border-radius: $width/2;
-            border-radius: $width/2;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
   }
   
   .circle {

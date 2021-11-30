@@ -5,7 +5,7 @@
     flex-flow: column nowrap;
     width: 100%;
     height: auto;
-    margin: 1% 0 3% 0;
+    margin: 3% 0 3% 0;
     text-decoration: none;
 
     a {
@@ -17,11 +17,11 @@
         height: 22px;
         margin-bottom: 10px;
 
-        font-family: Open Sans;
+        font-family: $openSans;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 16px;
-        line-height: 22px;
+        line-height: 10px;
 
         /* identical to box height */
         letter-spacing: 0.05em;
@@ -36,7 +36,7 @@
         flex-flow: row wrap;
         font-size: 14px;
 
-        width: 105%;
+        width: 89%;
         height: auto;
         padding: 0
 
@@ -44,11 +44,25 @@
     }
     &__li{
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
+        justify-content: center;
+        align-content: flex-start;
 
         &:hover{
             cursor: pointer;
+        }
+
+        &__label{
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-content: flex-start;
+            cursor:pointer;
+            &__input{
+                margin-right: 6%;
+                width: 21px;
+                height: 21px;
+                @include select(12px);
+            }
         }
 
         width: 100%;
@@ -66,29 +80,60 @@
         color: $black;
 
     }
+
+
     &__liB{
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: flex-start;
-        align-items: center;
+        list-style-type: none;
+        list-style-position: outside;
+        padding: 5px;
+        float: left;
+
+        /*  */
+        font-family: $numberSans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.9rem;
+        line-height: 100%;
+        /* identical to box height, or 14px */
+
+        width: 44px;
+        height: 44px;
+
+        color: $black;
+
+        margin: 0% -4px 0 0px;
 
         &:hover{
             cursor: pointer;
         }
+        &__input:not(:checked), &__input:checked {
+            display: none;
+            position: sticky;
+            left: -9999%;
+            text-align: center;
+        }
 
-        width: 25%;
-        height: auto;
 
+        &__input + &__label{
+            display: inline-block;
+            cursor: pointer;
+            border: 1px solid $blue;
+            color: $black;
+            padding:7px 0 0 0;
+            text-align: center;
+        }
+
+        &__input:not(:checked) + &__label{
+            display: block;
+            text-align: center;
+
+            border: 1px solid $grayL;
+            color: $grayL;
+            padding:7px 0 0 0;
+        }
         margin: 3% -4px 0 0px;
 
-        font-family: Open Sans;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 100%;
-        /* identical to box height, or 14px */
-
-        color: $black;
+        
     }
 
     &__liSquare{
@@ -106,8 +151,13 @@
     &__Squares{
         display: flex;
         flex-flow: column wrap;
-        height: auto;
+        height: 150%;
         width: 87%;
+
+        @include breakpoint(sm){
+            width: 100%;
+        }
+
     }
     &__liSquareSize{
         display: flex;

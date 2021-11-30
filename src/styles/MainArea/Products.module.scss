@@ -1,7 +1,108 @@
 @import "./../../styles/variables.scss";
 
-.allProducts{
+.allProducts {
+  width: 100%;
+  padding: 0 4.33% 0 7.33%;
+  background-color: rgba(255, 255, 255, 0.692);
+
+  @include breakpoint(sm) {
+    padding: 0 0.33% 0 4.33%;
+  }
+
+  &__ul {
+    height: 40px;
     width: 100%;
-    padding: 0 11.33% 0 11.33%;
-    background-color: rgba(0, 0, 139, 0.692);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    padding: 0;
+    &__li {
+      display: flex;
+      flex-flow: column nowrap;
+      height: 33rem;
+
+      width: 22%;
+
+      @include breakpoint(sm) {
+        width: 27%;
+        height: 27rem;
+      }
+
+      margin: 0px 1.5% 4% 1.5%;
+
+      &__img {
+        height: 69%;
+
+      }
+
+      &__info {
+        height: 19%;
+
+        display: flex;
+        flex-flow: column;
+        margin-top: 7px;
+        &__title {
+          height: 40%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: $openSans;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 100%;
+          line-height: 22px;
+
+          /* identical to box height */
+          letter-spacing: 0.07em;
+          text-transform: uppercase;
+
+          text-align: center;
+        }
+        &__price {
+          height: 30%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: 600;
+          font-size: 100%;
+          text-transform: uppercase;
+        }
+        &__parce {
+          height: 30%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 108%;
+        }
+      }
+
+      &__buy {
+        z-index: 20;
+        background-color: black;
+        color: white;
+        height: 12%;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        transition: all .05s ease-Out;
+
+        font-family: $openSans;
+        font-style: normal;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 0.07em;
+        border: 0;
+      }
+
+
+      &__buy:hover{
+        background-color: $grayL;
+        opacity: 1;
+      }
+      &__buy:active{
+        background-color: rgb(255, 255, 255);
+        color: black;
+      }
+    }
+  }
 }

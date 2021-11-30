@@ -2,7 +2,7 @@ import React from 'react';
 
 import classes from "./../styles/MainArea/Header.module.scss";
 
-const Header = () => {
+const Header = (props) => {
     return (
         <header className={classes.header}>
             <a className={classes.header__divLogo} href="/"></a>
@@ -10,7 +10,7 @@ const Header = () => {
             <a href="" className={classes.header__divShop} >
                 <img className={classes.header__divShop__img}/>
                 <div className={classes.header__divShop__counter}>
-                    <span>5</span>
+                    <span>{props.shop}</span>
                 </div>
             </a>
         </header>
